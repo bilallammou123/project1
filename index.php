@@ -1,20 +1,18 @@
-<html>
-<head>
-  <body>
-<form action="index.php" method="get">
-  <input type="text" voornaam="voornaam"><br>
-   <input type="text" tussenvoegsel="tussenvoegsel"><br>
-   <input type="text" achternaam="achternaam"><br>
-  <input type="text" E-mail="E-mail"><br>
-   <input type="text" gebruikersnaam="gebruikersnaam"><br>
-   <input type="text" wachtwoord="wachtwoord"><br>
-    <input type="text" herhaal wachtwoord="herhaal wachtwoord"><br>
-<input type="Submit"><br>
-</form>
-<br>
 <?php
-echo $_GET["voornaam"]
-?>
-</body>
-</head>
+
+ ?>
+
+<html>
+  <head>
+    <title>inlog page</title>
+  </head>
+  <body>
+    <form action="index.php" method="post">
+      <input type="text" title="username" placeholder="username" required><br>
+      <input type="password" title="wachtwoord" placeholder="wachtwoord" required><br>
+      <button type="submit" class="btn"> verzenden </button>
+      <a class="sign up" href="signup.php"> registreer </a><br>
+      <a class="wachtwoord vergeten" href="lostpsw.php"> wachtwoord vergeten </a>
+    </form>
+  </body>
 </html>
